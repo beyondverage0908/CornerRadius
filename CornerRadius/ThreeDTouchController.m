@@ -20,6 +20,9 @@
     
     // add btn
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    btn.backgroundColor = [UIColor blueColor];
+    [btn setTitle:@"btn" forState:UIControlStateNormal];
+    btn.titleLabel.textColor = [UIColor blackColor];
     [self.view addSubview:btn];
 }
 
