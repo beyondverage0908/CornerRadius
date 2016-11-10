@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3317AEF01DD44BF8003CFEBB /* ThreeDTouchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317AEEF1DD44BF8003CFEBB /* ThreeDTouchController.m */; };
 		95F5C27C1CD2473A0083E6C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5C27B1CD2473A0083E6C4 /* main.m */; };
 		95F5C27F1CD2473A0083E6C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5C27E1CD2473A0083E6C4 /* AppDelegate.m */; };
 		95F5C2821CD2473A0083E6C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5C2811CD2473A0083E6C4 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3317AEEE1DD44BF8003CFEBB /* ThreeDTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDTouchController.h; sourceTree = "<group>"; };
+		3317AEEF1DD44BF8003CFEBB /* ThreeDTouchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDTouchController.m; sourceTree = "<group>"; };
 		95F5C2771CD2473A0083E6C4 /* CornerRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F5C27B1CD2473A0083E6C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95F5C27D1CD2473A0083E6C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				95F5C27E1CD2473A0083E6C4 /* AppDelegate.m */,
 				95F5C2801CD2473A0083E6C4 /* ViewController.h */,
 				95F5C2811CD2473A0083E6C4 /* ViewController.m */,
+				3317AEEE1DD44BF8003CFEBB /* ThreeDTouchController.h */,
+				3317AEEF1DD44BF8003CFEBB /* ThreeDTouchController.m */,
 				95F5C2831CD2473A0083E6C4 /* Main.storyboard */,
 				95F5C2861CD2473A0083E6C4 /* Assets.xcassets */,
 				95F5C2881CD2473A0083E6C4 /* LaunchScreen.storyboard */,
@@ -220,6 +225,8 @@
 				TargetAttributes = {
 					95F5C2761CD2473A0083E6C4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P4Q3S6FX46;
+						ProvisioningStyle = Automatic;
 					};
 					95F5C28F1CD2473B0083E6C4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -285,6 +292,7 @@
 			files = (
 				95F5C2B51CD474E70083E6C4 /* DrCorner.m in Sources */,
 				95F5C2821CD2473A0083E6C4 /* ViewController.m in Sources */,
+				3317AEF01DD44BF8003CFEBB /* ThreeDTouchController.m in Sources */,
 				95F5C27F1CD2473A0083E6C4 /* AppDelegate.m in Sources */,
 				95F5C27C1CD2473A0083E6C4 /* main.m in Sources */,
 			);
@@ -427,10 +435,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P4Q3S6FX46;
 				INFOPLIST_FILE = CornerRadius/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ihefe.CornerRadius;
+				PRODUCT_BUNDLE_IDENTIFIER = ihefe.CornerRadius.Dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -438,9 +450,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P4Q3S6FX46;
 				INFOPLIST_FILE = CornerRadius/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ihefe.CornerRadius;
+				PRODUCT_BUNDLE_IDENTIFIER = ihefe.CornerRadius.Dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
